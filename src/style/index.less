@@ -1,0 +1,68 @@
+@import 'common';
+
+.mainContainer{
+  .full();
+}
+.bg-img{
+  .full();
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transform: scale(1.1);
+  background-attachment: fixed;
+  background-image: url("https://cdn.jsdelivr.net/gh/shangzhenyang/assets/img/bing/20201117.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+}
+header{
+  backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,.1);
+  box-shadow: 0 2px 2px rgba(0,0,0,.2);
+  padding: 10px 15px;
+  position: fixed;
+  top: 0;
+  user-select: none;
+  width: 100%;
+}
+.title{
+  color: white;
+  float: left;
+  font-size: 1.5em;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 57px 15px 15px;
+}
+h1{
+  color: white;
+  margin-top: 10px;
+}
+.particleBackground{
+  position: fixed;
+  top: 0;
+}
+.settingsButton{
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  font-size: 3em;
+}
+.poper{
+  display: fixed;
+  right: 80px;
+  bottom: 25px;
+}
+.settingsItem{
+  width: 100%;
+  cursor: pointer;
+}
+
