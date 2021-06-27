@@ -14,7 +14,7 @@
     <div class="settingsButton el-icon-setting" @click="visible = !visible"></div>
     <el-popover placement="left" trigger="manual" v-model="visible" popper-class="poper">
       <div class="settingsItem" @click="showBackground = !showBackground">显示特效</div>
-    </el-popover> 
+    </el-popover>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ import particleBackground from './particleBackground'
 export default {
   name: 'index',
   components: {
-    background: particleBackground 
+    background: particleBackground
   },
   data () {
     return {
