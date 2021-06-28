@@ -13,7 +13,7 @@
     </div>
     <div class="settingsButton el-icon-setting" @click="visible = !visible"></div>
     <el-popover placement="left" trigger="manual" v-model="visible" popper-class="poper">
-      <div class="settingsItem" @click="showBackground = !showBackground">显示特效</div>
+      <div class="settingsItem" v-text="showBackgroundText" @click="changeBackgroundVisibility"></div>
     </el-popover>
   </div>
 </template>
@@ -28,7 +28,14 @@ export default {
   data () {
     return {
       visible: false,
-      showBackground: true
+      showBackground: true,
+      showBackgroundText: '关闭特效'
+    }
+  },
+  methods: {
+    changeBackgroundVisibility: function () {
+      this.showBackground = !this.showBackground
+      this.showBackgroundText = this.showBackground ? '关闭特效' : '显示特效'
     }
   }
 }

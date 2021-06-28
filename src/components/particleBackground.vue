@@ -30,8 +30,8 @@ export default {
         this.dots.push({
           ox: this.getRandom(0, this.canvas.width),
           oy: this.getRandom(0, this.canvas.height),
-          xs: this.getRandom(-2, 2),
-          ys: this.getRandom(-2, 2)
+          xs: this.getRandom(-1, 1),
+          ys: this.getRandom(-1, 1)
         })
       }
     },
